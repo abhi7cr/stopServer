@@ -54,7 +54,7 @@ let setReminderNotification = function (data) {
                 hour1 = (Number(hour1) + 1 + Number(hourComponent)) % 24
                 minute1 = (Number(minute1) + Number(minuteComponent)) - 60
             } else {
-                hour1 = (Number(hour1) - 1 + Number(hourComponent)) % 24
+                hour1 = (Number(hour1) + Number(hourComponent)) % 24
                 minute1 = Number(minute1) - Number(minuteComponent)
             }
             if (hourComponent.indexOf('-') !== -1 && Number(minute2) - Number(minuteComponent) < 0) {
