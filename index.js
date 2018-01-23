@@ -2,6 +2,7 @@ const cron = require('cron');
 let express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
+const request = require('request')
 let intervalIds = {}
 let cronJobs = {}
 
@@ -104,7 +105,10 @@ let setReminderNotification = function (data) {
         reminderCron1.start()
         reminderCron2.start()
         cronJobs[uid] = [reminderCron1, reminderCron2]
-        return true
+        return {
+            time1: cronTime1,
+            time2: cronTime2
+        }
     }
     catch (e) {
         console.log(e)
