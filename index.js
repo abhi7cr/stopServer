@@ -79,9 +79,9 @@ let setReminderNotification = function (data) {
         }
         console.log(hour1 + ":" + minute1)
         console.log(hour2 + ":" + minute2)
-        let cronTime1 = `00 ${Number(minute1)} ${Number(hour1)} * * 0-6`
+        let cronTime1 = `00 ${Number(minute1)} ${Number(hour1)} * * *`
         console.log(cronTime1)
-        let cronTime2 = `00 ${Number(minute2)} ${Number(hour2)} * * 0-6`
+        let cronTime2 = `00 ${Number(minute2)} ${Number(hour2)} * * *`
         console.log(cronTime2)
         let reminderCron1 = new cron.CronJob({
             cronTime: cronTime1,
@@ -107,7 +107,8 @@ let setReminderNotification = function (data) {
         cronJobs[uid] = [reminderCron1, reminderCron2]
         return {
             time1: cronTime1,
-            time2: cronTime2
+            time2: cronTime2,
+            uids: Object.keys(cronJobs)
         }
     }
     catch (e) {
