@@ -1,3 +1,5 @@
+import { read } from 'fs';
+
 const cron = require('cron');
 let express = require('express')
 const path = require('path')
@@ -5,6 +7,7 @@ const bodyParser = require('body-parser')
 const request = require('request')
 let intervalIds = {}
 let cronJobs = {}
+const schedule = require('node-schedule')
 
 const app = express()
 console.log(new Date().toDateString())
@@ -102,9 +105,28 @@ let setReminderNotification = function (data) {
             start: false,
             // timeZone: 'America/Chicago'
         });
-        reminderCron1.start()
-        reminderCron2.start()
-        cronJobs[uid] = [reminderCron1, reminderCron2]
+        //reminderCron1.start()
+        //reminderCron2.start()
+        
+
+        let rule1 = new schedule.RecurrenceRule();
+        rule1.hour = Number(hour1);
+        rule1.minute = Number(minute1);
+ 
+        let j1 = schedule.scheduleJob(rule1, function(){
+            sendReminder()
+        });
+
+        let rule2 = new schedule.RecurrenceRule();
+        rule2.hour = Number(hour2);
+        rule2.minute = Number(minute2);
+ 
+        let j2 = schedule.scheduleJob(rule2, function(){
+            sendReminder()
+        });
+
+        cronJobs[uid] = [j1, j2]
+
         return {
             time1: cronTime1,
             time2: cronTime2,
