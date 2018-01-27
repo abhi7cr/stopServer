@@ -6,6 +6,7 @@ const request = require('request')
 let intervalIds = {}
 let cronJobs = {}
 const schedule = require('node-schedule')
+const logger = require('./logger').createLogger('debug.log'); 
 
 const app = express()
 console.log(new Date().toDateString())
@@ -17,6 +18,7 @@ let setReminderNotification = function (data) {
         const timeZoneOffset = data.timeZoneOffset
         const uid = data.userId;
         console.log(reminder1 + ',' + reminder2 + ',' + uid + ',' + timeZoneOffset)
+        logger.info(reminder1 + ',' + reminder2 + ',' + uid + ',' + timeZoneOffset)
         let hourMinute1 = reminder1.split(':');
         let hour1 = hourMinute1[0];
         let minute1 = hourMinute1[1];
@@ -27,6 +29,7 @@ let setReminderNotification = function (data) {
         if (cronJobs[uid] !== undefined) {
             Array(...cronJobs[uid]).forEach(c => {
                 console.log('stopping cron job' + c + ' for phone ' + phone)
+                logger.info('stopping cron job' + c + ' for phone ' + phone)
                 c.cancel()
             })
         }
@@ -36,6 +39,7 @@ let setReminderNotification = function (data) {
             request(url, { method: 'GET' }, (err, res, body) => {
                 if (err) { return console.log('ERROR:' + err); }
                 console.log('BODY:' + body);
+                logger.info('BODY:' + body);
             });
         }
 
@@ -80,6 +84,10 @@ let setReminderNotification = function (data) {
         }
         console.log(hour1 + ":" + minute1)
         console.log(hour2 + ":" + minute2)
+
+        logger.info(hour1 + ":" + minute1)
+        logger.info(hour2 + ":" + minute2)
+
         let cronTime1 = `00 ${Number(minute1)} ${Number(hour1)} * * *`
         console.log(cronTime1)
         let cronTime2 = `00 ${Number(minute2)} ${Number(hour2)} * * *`
@@ -103,6 +111,7 @@ let setReminderNotification = function (data) {
             start: false,
             // timeZone: 'America/Chicago'
         });
+
         //reminderCron1.start()
         //reminderCron2.start()
         
@@ -110,21 +119,25 @@ let setReminderNotification = function (data) {
         let rule1 = new schedule.RecurrenceRule();
         rule1.hour = Number(hour1);
         rule1.minute = Number(minute1);
+        rule1.dayOfWeek = new schedule.Range(0,6)
  
         let j1 = schedule.scheduleJob(rule1, function(){
+            logger.info('reminder 1 fired for' + uid)
             sendReminder()
         });
 
         let rule2 = new schedule.RecurrenceRule();
-        rule2.hour = Number(hour2);
+        // rule2.hour = Number(hour2);
         rule2.minute = Number(minute2);
+        rule2.dayOfWeek = new schedule.Range(0,6)
  
         let j2 = schedule.scheduleJob(rule2, function(){
+            logger.info('reminder 2 fired for' + uid)
             sendReminder()
         });
 
         cronJobs[uid] = [j1, j2]
-
+        
         return {
             time1: cronTime1,
             time2: cronTime2,
@@ -133,6 +146,7 @@ let setReminderNotification = function (data) {
     }
     catch (e) {
         console.log(e)
+        logger.error('caught exception:' + e)
         return e
     }
 }
