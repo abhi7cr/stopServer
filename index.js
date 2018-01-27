@@ -28,8 +28,8 @@ let setReminderNotification = function (data) {
 
         if (cronJobs[uid] !== undefined) {
             Array(...cronJobs[uid]).forEach(c => {
-                console.log('stopping cron job' + c + ' for phone ' + phone)
-                logger.info('stopping cron job' + c + ' for phone ' + phone)
+                console.log('stopping cron job for ' + uid + ' for phone ' + phone)
+                logger.info('stopping cron job for ' + uid + ' for phone ' + phone)
                 c.cancel()
             })
         }
