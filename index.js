@@ -129,7 +129,7 @@ let setReminderNotification = function (data) {
         let rule2 = new schedule.RecurrenceRule();
         // rule2.hour = Number(hour2);
         rule2.minute = Number(minute2);
-        rule2.dayOfWeek = new schedule.Range(0,6)
+        // rule2.dayOfWeek = new schedule.Range(0,6)
  
         let j2 = schedule.scheduleJob(rule2, function(){
             logger.info('reminder 2 fired for' + uid)
