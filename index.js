@@ -6,7 +6,7 @@ const request = require('request')
 let intervalIds = {}
 let cronJobs = {}
 const schedule = require('node-schedule')
-const logger = require('./logger').createLogger('debug.log'); 
+const logger = require('logger').createLogger('debug.log'); 
 
 const app = express()
 console.log(new Date().toDateString())
