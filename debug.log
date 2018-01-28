@@ -1,1 +1,41 @@
 
+
+
+
+
+info [Sun Jan 28 2018 07:30:54 GMT-0600 (Central Standard Time)]  07:32,07:07,D5vNp58dY8hK853jseD2NhrVVHh2,6
+info [Sun Jan 28 2018 07:30:54 GMT-0600 (Central Standard Time)]  13:32
+info [Sun Jan 28 2018 07:30:54 GMT-0600 (Central Standard Time)]  13:07
+error [Sun Jan 28 2018 07:30:55 GMT-0600 (Central Standard Time)]  caught exception:Error: Field (/7) cannot be parsed
+
+
+info [Sun Jan 28 2018 07:32:15 GMT-0600 (Central Standard Time)]  07:32,07:07,D5vNp58dY8hK853jseD2NhrVVHh2,6
+info [Sun Jan 28 2018 07:32:15 GMT-0600 (Central Standard Time)]  13:32
+info [Sun Jan 28 2018 07:32:15 GMT-0600 (Central Standard Time)]  13:07
+info [Sun Jan 28 2018 07:32:26 GMT-0600 (Central Standard Time)]  07:33,07:07,D5vNp58dY8hK853jseD2NhrVVHh2,6
+info [Sun Jan 28 2018 07:32:26 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:32:26 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:32:26 GMT-0600 (Central Standard Time)]  13:33
+info [Sun Jan 28 2018 07:32:26 GMT-0600 (Central Standard Time)]  13:07
+info [Sun Jan 28 2018 07:34:52 GMT-0600 (Central Standard Time)]  07:35,07:07,D5vNp58dY8hK853jseD2NhrVVHh2,6
+info [Sun Jan 28 2018 07:34:52 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:34:52 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:34:52 GMT-0600 (Central Standard Time)]  13:35
+info [Sun Jan 28 2018 07:34:52 GMT-0600 (Central Standard Time)]  13:07
+info [Sun Jan 28 2018 07:34:56 GMT-0600 (Central Standard Time)]  07:35,07:07,D5vNp58dY8hK853jseD2NhrVVHh2,6
+info [Sun Jan 28 2018 07:34:56 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:34:56 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:34:56 GMT-0600 (Central Standard Time)]  13:35
+info [Sun Jan 28 2018 07:34:56 GMT-0600 (Central Standard Time)]  13:07
+info [Sun Jan 28 2018 07:36:26 GMT-0600 (Central Standard Time)]  19:07,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,-5.5
+info [Sun Jan 28 2018 07:36:26 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:36:26 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:36:26 GMT-0600 (Central Standard Time)]  13:37
+info [Sun Jan 28 2018 07:36:26 GMT-0600 (Central Standard Time)]  1:38
+info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  07:38,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  7:38
+info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  7:08
+info [Sun Jan 28 2018 07:38:01 GMT-0600 (Central Standard Time)]  BODY:{"messages":[],"error":"Integration is not active. - "}
+info [Sun Jan 28 2018 07:40:01 GMT-0600 (Central Standard Time)]  BODY:{"messages":[],"error":"Integration is not active. - "}

@@ -90,7 +90,7 @@ let setReminderNotification = function (data) {
 
         let cronTime1 = `${Number(minute1)} ${Number(hour1)} * * *`
         console.log(cronTime1)
-        let cronTime2 = `/${Number(minute2)} ${Number(hour2)} * * *`
+        let cronTime2 = `*/${Number(minute2)} ${Number(hour2)} * * *`
         console.log(cronTime2)
         let reminderCron1 = new cron.CronJob({
             cronTime: cronTime1,
