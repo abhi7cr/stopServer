@@ -30,7 +30,7 @@ let setReminderNotification = function (data) {
             Array(...cronJobs[uid]).forEach(c => {
                 console.log('stopping cron job for ' + uid + ' for phone ' + phone)
                 logger.info('stopping cron job for ' + uid + ' for phone ' + phone)
-                c.cancel()
+                c.stop()
             })
         }
 
@@ -88,9 +88,9 @@ let setReminderNotification = function (data) {
         logger.info(hour1 + ":" + minute1)
         logger.info(hour2 + ":" + minute2)
 
-        let cronTime1 = `00 ${Number(minute1)} ${Number(hour1)} * * *`
+        let cronTime1 = `${Number(minute1)} ${Number(hour1)} * * *`
         console.log(cronTime1)
-        let cronTime2 = `00 ${Number(minute2)} ${Number(hour2)} * * *`
+        let cronTime2 = `/${Number(minute2)} ${Number(hour2)} * * *`
         console.log(cronTime2)
         let reminderCron1 = new cron.CronJob({
             cronTime: cronTime1,
@@ -112,8 +112,8 @@ let setReminderNotification = function (data) {
             // timeZone: 'America/Chicago'
         });
 
-        //reminderCron1.start()
-        //reminderCron2.start()
+        reminderCron1.start()
+        reminderCron2.start()
         
 
         let rule1 = new schedule.RecurrenceRule();
@@ -121,22 +121,22 @@ let setReminderNotification = function (data) {
         rule1.minute = Number(minute1);
         rule1.dayOfWeek = new schedule.Range(0,6)
  
-        let j1 = schedule.scheduleJob(rule1, function(){
-            logger.info('reminder 1 fired for' + uid)
-            sendReminder()
-        });
+        // let j1 = schedule.scheduleJob(rule1, function(){
+        //     logger.info('reminder 1 fired for' + uid)
+        //     sendReminder()
+        // });
 
         let rule2 = new schedule.RecurrenceRule();
         // rule2.hour = Number(hour2);
         rule2.minute = Number(minute2);
         // rule2.dayOfWeek = new schedule.Range(0,6)
  
-        let j2 = schedule.scheduleJob(rule2, function(){
-            logger.info('reminder 2 fired for' + uid)
-            sendReminder()
-        });
+        // let j2 = schedule.scheduleJob(rule2, function(){
+        //     logger.info('reminder 2 fired for' + uid)
+        //     sendReminder()
+        // });
 
-        cronJobs[uid] = [j1, j2]
+        cronJobs[uid] = [reminderCron1, reminderCron2]
         
         return {
             time1: cronTime1,
