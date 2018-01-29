@@ -39,3 +39,43 @@ info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  7:38
 info [Sun Jan 28 2018 07:37:49 GMT-0600 (Central Standard Time)]  7:08
 info [Sun Jan 28 2018 07:38:01 GMT-0600 (Central Standard Time)]  BODY:{"messages":[],"error":"Integration is not active. - "}
 info [Sun Jan 28 2018 07:40:01 GMT-0600 (Central Standard Time)]  BODY:{"messages":[],"error":"Integration is not active. - "}
+
+
+info [Sun Jan 28 2018 20:52:31 GMT-0600 (Central Standard Time)]  08:53,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 20:52:31 GMT-0600 (Central Standard Time)]  8:53
+info [Sun Jan 28 2018 20:52:31 GMT-0600 (Central Standard Time)]  7:08
+info [Sun Jan 28 2018 20:53:46 GMT-0600 (Central Standard Time)]  20:54,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 20:53:46 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 20:53:46 GMT-0600 (Central Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Sun Jan 28 2018 20:53:46 GMT-0600 (Central Standard Time)]  20:54
+info [Sun Jan 28 2018 20:53:46 GMT-0600 (Central Standard Time)]  7:08
+
+
+info [Sun Jan 28 2018 21:19:37 GMT-0600 (Central Standard Time)]  21:20,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 21:19:37 GMT-0600 (Central Standard Time)]  21:20
+info [Sun Jan 28 2018 21:19:37 GMT-0600 (Central Standard Time)]  7:08
+
+
+info [Sun Jan 28 2018 21:29:14 GMT-0600 (Central Standard Time)]  21:30,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 21:29:14 GMT-0600 (Central Standard Time)]  21:30
+info [Sun Jan 28 2018 21:29:14 GMT-0600 (Central Standard Time)]  7:08
+
+
+info [Sun Jan 28 2018 21:48:31 GMT-0600 (Central Standard Time)]  21:49,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 21:48:31 GMT-0600 (Central Standard Time)]  21:49
+info [Sun Jan 28 2018 21:48:31 GMT-0600 (Central Standard Time)]  7:08
+
+
+info [Sun Jan 28 2018 21:54:31 GMT-0600 (Central Standard Time)]  21:56,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Sun Jan 28 2018 21:54:31 GMT-0600 (Central Standard Time)]  21:56
+info [Sun Jan 28 2018 21:54:31 GMT-0600 (Central Standard Time)]  7:08
+info [Sun Jan 28 2018 21:56:01 GMT-0600 (Central Standard Time)]  SM34baaf984c73490c90deb40fbd7a42f7
+info [Sun Jan 28 2018 22:00:01 GMT-0600 (Central Standard Time)]  SMabd1f9e95e6c425ca3baf5dbeedbbaba
+
+
+info [Mon Jan 29 2018 10:38:50 GMT+0530 (India Standard Time)]  10:40,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Mon Jan 29 2018 10:38:50 GMT+0530 (India Standard Time)]  10:40
+info [Mon Jan 29 2018 10:38:50 GMT+0530 (India Standard Time)]  7:08
+info [Mon Jan 29 2018 10:40:02 GMT+0530 (India Standard Time)]  SM1230b82a58184667a725875bf53afd37
+info [Mon Jan 29 2018 10:45:02 GMT+0530 (India Standard Time)]  SMe5c56b8ba804492091a3fe4189a140e0
+info [Mon Jan 29 2018 11:00:02 GMT+0530 (India Standard Time)]  SMc7aa1c59408c4978984af804605fe0d5

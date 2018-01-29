@@ -7,6 +7,7 @@ let intervalIds = {}
 let cronJobs = {}
 const schedule = require('node-schedule')
 const logger = require('logger').createLogger('debug.log'); 
+const twilio = require('twilio');
 
 const app = express()
 console.log(new Date().toDateString())
@@ -35,12 +36,20 @@ let setReminderNotification = function (data) {
         }
 
         let sendReminder = () => {
-            const url = 'https://platform.clickatell.com/messages/http/send?apiKey=-MJU6bpsQtuWnjBPposNdg==&to=1' + phone + '&content=Reminder+from+Constipation+APP:+Hey!+This+is+a+reminder+to+go+the+bathroom!+App+link:+https://stop-847d8.firebaseapp.com&from=1202-735-3375';
-            request(url, { method: 'GET' }, (err, res, body) => {
-                if (err) { return console.log('ERROR:' + err); }
-                console.log('BODY:' + body);
-                logger.info('BODY:' + body);
-            });
+            const accountSid = 'AC834b9ffd9b874fb39413fbb11ab4464e'; // Your Account SID from www.twilio.com/console
+            const authToken = '35824371cf7e512a78af6632a915aa90';   // Your Auth Token from www.twilio.com/console
+            const client = new twilio(accountSid, authToken);
+            client.messages.create({
+                  body: 'Reminder from Constipation APP: Hey! This is a reminder to go the bathroom! App link: https://stop-847d8.firebaseapp.com',
+                  to: `+1${phone}`,  // Text this number
+                 from: '+17867085041' // From a valid Twilio number
+           }).then((message) => {
+            console.log(message.sid)
+            logger.info(message.sid)
+           }, (err) => {
+            console.log(err)
+            logger.info(err)
+           });
         }
 
         if (timeZoneOffset.toString().indexOf('.') !== -1) {
@@ -90,7 +99,7 @@ let setReminderNotification = function (data) {
 
         let cronTime1 = `${Number(minute1)} ${Number(hour1)} * * *`
         console.log(cronTime1)
-        let cronTime2 = `*/${Number(minute2)} ${Number(hour2)} * * *`
+        let cronTime2 = `${Number(minute2)} ${Number(hour2)} * * *`
         console.log(cronTime2)
         let reminderCron1 = new cron.CronJob({
             cronTime: cronTime1,

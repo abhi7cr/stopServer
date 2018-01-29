@@ -10,6 +10,7 @@
     "node-schedule": "^1.3.0",
     "path": "^0.12.7",
     "request": "^2.83.0",
+    "twilio": "^3.11.1",
     "urlsafe-base64": "^1.0.0",
     "web-push": "^3.2.4",
     "websmscom": "^1.0.2"
