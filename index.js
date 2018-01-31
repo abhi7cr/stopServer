@@ -97,33 +97,29 @@ let setReminderNotification = function (data) {
         logger.info(hour1 + ":" + minute1)
         logger.info(hour2 + ":" + minute2)
 
-        let cronTime1 = `${Number(minute1)} ${Number(hour1)} * * *`
+        minute1 = minute1 < 10 && minute1.toString().indexOf('0') === -1  ? '0' + minute1 : minute1
+        minute2 = minute2 < 10 && minute2.toString().indexOf('0') === -1  ? '0' + minute2 : minute2
+        hour1 = hour1 < 10 && hour1.toString().indexOf('0') === -1 ? '0' + hour1 : hour1
+        hour2 = hour2 < 10 && hour2.toString().indexOf('0') === -1  ? '0' + hour2 : hour2
+
+        let cronTime1 = `${minute1} ${hour1} * * *`
         console.log(cronTime1)
-        let cronTime2 = `${Number(minute2)} ${Number(hour2)} * * *`
+        logger.info(cronTime1)
+        let cronTime2 = `${minute2} ${hour2} * * *`
         console.log(cronTime2)
-        let reminderCron1 = new cron.CronJob({
-            cronTime: cronTime1,
-            onTick: () => {
-                console.log('reminder 1 ticked for ' + phone)
-                sendReminder()
-            },
-            start: false,
-            //  timeZone: 'America/Chicago'
-        });
+        logger.info(cronTime2)
 
-        let reminderCron2 = new cron.CronJob({
-            cronTime: cronTime2,
-            onTick: () => {
-                console.log('reminder 2 ticked ' + phone)
-                sendReminder()
-            },
-            start: false,
-            // timeZone: 'America/Chicago'
-        });
+        let reminderCron1 = new cron.CronJob(cronTime1, () => {
+            console.log('reminder 1 fired for' + uid)
+            logger.info('reminder 1 fired for' + uid)
+            sendReminder()
+        }, null, true);
 
-        reminderCron1.start()
-        reminderCron2.start()
-        
+        let reminderCron2 = new cron.CronJob(cronTime2, () => {
+            console.log('reminder 2 fired for' + uid)
+            logger.info('reminder 2 fired for' + uid)
+            sendReminder()
+        }, null, true);     
 
         let rule1 = new schedule.RecurrenceRule();
         rule1.hour = Number(hour1);

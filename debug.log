@@ -79,3 +79,65 @@ info [Mon Jan 29 2018 10:38:50 GMT+0530 (India Standard Time)]  7:08
 info [Mon Jan 29 2018 10:40:02 GMT+0530 (India Standard Time)]  SM1230b82a58184667a725875bf53afd37
 info [Mon Jan 29 2018 10:45:02 GMT+0530 (India Standard Time)]  SMe5c56b8ba804492091a3fe4189a140e0
 info [Mon Jan 29 2018 11:00:02 GMT+0530 (India Standard Time)]  SMc7aa1c59408c4978984af804605fe0d5
+
+
+info [Tue Jan 30 2018 20:26:00 GMT+0530 (India Standard Time)]  08:30,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Tue Jan 30 2018 20:26:00 GMT+0530 (India Standard Time)]  8:30
+info [Tue Jan 30 2018 20:26:00 GMT+0530 (India Standard Time)]  7:08
+info [Tue Jan 30 2018 20:26:00 GMT+0530 (India Standard Time)]  30 8 * * *
+info [Tue Jan 30 2018 20:26:00 GMT+0530 (India Standard Time)]  08 7 * * *
+
+
+info [Tue Jan 30 2018 20:27:31 GMT+0530 (India Standard Time)]  08:30,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Tue Jan 30 2018 20:27:31 GMT+0530 (India Standard Time)]  8:30
+info [Tue Jan 30 2018 20:27:31 GMT+0530 (India Standard Time)]  7:08
+info [Tue Jan 30 2018 20:27:31 GMT+0530 (India Standard Time)]  30 8 * * *
+info [Tue Jan 30 2018 20:27:31 GMT+0530 (India Standard Time)]  08 7 * * *
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  20:29,07:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  20:29
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  7:08
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  29 20 * * *
+info [Tue Jan 30 2018 20:27:43 GMT+0530 (India Standard Time)]  08 7 * * *
+info [Tue Jan 30 2018 20:29:00 GMT+0530 (India Standard Time)]  reminder 1 fired forD5vNp58dY8hK853jseD2NhrVVHh2
+info [Tue Jan 30 2018 20:29:02 GMT+0530 (India Standard Time)]  SM42f165453c22452883304a3cbe3fbbb5
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  20:29,21:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  20:29
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  21:08
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  29 20 * * *
+info [Tue Jan 30 2018 20:29:28 GMT+0530 (India Standard Time)]  08 21 * * *
+info [Tue Jan 30 2018 21:08:00 GMT+0530 (India Standard Time)]  reminder 2 fired forD5vNp58dY8hK853jseD2NhrVVHh2
+info [Tue Jan 30 2018 21:08:02 GMT+0530 (India Standard Time)]  SM6b86aaf5d6be4a73b987719909485c31
+
+
+info [Wed Jan 31 2018 19:22:30 GMT+0530 (India Standard Time)]  19:23,8:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Wed Jan 31 2018 19:22:30 GMT+0530 (India Standard Time)]  19:23
+info [Wed Jan 31 2018 19:22:30 GMT+0530 (India Standard Time)]  8:08
+info [Wed Jan 31 2018 19:22:30 GMT+0530 (India Standard Time)]  23 19 * * *
+info [Wed Jan 31 2018 19:22:30 GMT+0530 (India Standard Time)]  008 08 * * *
+info [Wed Jan 31 2018 19:23:00 GMT+0530 (India Standard Time)]  reminder 1 fired forD5vNp58dY8hK853jseD2NhrVVHh2
+info [Wed Jan 31 2018 19:23:01 GMT+0530 (India Standard Time)]  SM5e3ac33e63cd4030b64ff58fc202ed79
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  19:23,9:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  19:23
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  9:08
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  23 19 * * *
+info [Wed Jan 31 2018 19:25:55 GMT+0530 (India Standard Time)]  008 09 * * *
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  19:23,9:48,D5vNp58dY8hK853jseD2NhrVVHh2,-5.5
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  stopping cron job for D5vNp58dY8hK853jseD2NhrVVHh2 for phone 2243923205
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  13:53
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  4:18
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  53 13 * * *
+info [Wed Jan 31 2018 19:28:09 GMT+0530 (India Standard Time)]  18 04 * * *
+
+
+info [Wed Jan 31 2018 19:29:58 GMT+0530 (India Standard Time)]  19:23,9:08,D5vNp58dY8hK853jseD2NhrVVHh2,0
+info [Wed Jan 31 2018 19:29:58 GMT+0530 (India Standard Time)]  19:23
+info [Wed Jan 31 2018 19:29:58 GMT+0530 (India Standard Time)]  9:08
+info [Wed Jan 31 2018 19:29:58 GMT+0530 (India Standard Time)]  23 19 * * *
+info [Wed Jan 31 2018 19:29:58 GMT+0530 (India Standard Time)]  08 09 * * *
